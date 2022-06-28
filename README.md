@@ -821,7 +821,7 @@ also query for information about hardware device classes, vendor and product
 information.
 
 **NOTE**: Parsing of the PCI-IDS file database is provided by the separate
-[github.com/alihassan4198-tech/pcidb library](http://github.com/alihassan4198-tech/pcidb). You can
+[github.com/jaypipes/pcidb library](http://github.com/jaypipes/pcidb). You can
 read that library's README for more information about the various structs that
 are exposed on the `ghw.PCIInfo` struct.
 
@@ -834,17 +834,17 @@ struct contains a number of fields that may be queried for PCI information:
   string) of pointers to `pcidb.Class` structs, one for each class of PCI
   device known to `ghw`
   (**DEPRECATED**, will be removed in `ghw` `v1.0`. Use the
-  `github.com/alihassan4198-tech/pcidb` library for exploring PCI database information)
+  `github.com/jaypipes/pcidb` library for exploring PCI database information)
 * `ghw.PCIInfo.Vendors` is a map, keyed by the PCI vendor ID (a hex-encoded
   string) of pointers to `pcidb.Vendor` structs, one for each PCI vendor
   known to `ghw`
   (**DEPRECATED**, will be removed in `ghw` `v1.0`. Use the
-  `github.com/alihassan4198-tech/pcidb` library for exploring PCI database information)
+  `github.com/jaypipes/pcidb` library for exploring PCI database information)
 * `ghw.PCIInfo.Products` is a map, keyed by the PCI product ID (a hex-encoded
   string) of pointers to `pcidb.Product` structs, one for each PCI product
   known to `ghw`
   (**DEPRECATED**, will be removed in `ghw` `v1.0`. Use the
-  `github.com/alihassan4198-tech/pcidb` library for exploring PCI database information)
+  `github.com/jaypipes/pcidb` library for exploring PCI database information)
 
 **NOTE**: PCI products are often referred to by their "device ID". We use
 the term "product ID" in `ghw` because it more accurately reflects what the

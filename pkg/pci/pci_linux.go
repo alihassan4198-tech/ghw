@@ -387,7 +387,7 @@ func (info *Info) getDeviceFromModaliasInfo(address string, modaliasInfo *device
 // ListDevices returns a list of pointers to Device structs present on the
 // host system
 // DEPRECATED. Will be removed in v1.0. Please use
-// github.com/alihassan4198-tech/pcidb to explore PCIDB information
+// github.com/jaypipes/pcidb to explore PCIDB information
 func (info *Info) ListDevices() []*Device {
 	paths := linuxpath.New(info.ctx)
 	devs := make([]*Device, 0)

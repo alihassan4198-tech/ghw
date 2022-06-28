@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/StackExchange/wmi"
-	"github.com/alihassan4198-tech/pcidb"
+	"github.com/jaypipes/pcidb"
 
 	"github.com/alihassan4198-tech/ghw/pkg/pci"
 	"github.com/alihassan4198-tech/ghw/pkg/util"
