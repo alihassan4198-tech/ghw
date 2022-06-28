@@ -1,7 +1,7 @@
 # `ghw` - Golang HardWare discovery/inspection library
 
-[![Build Status](https://github.com/jaypipes/ghw/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/jaypipes/ghw/actions)
-[![Go Report Card](https://goreportcard.com/badge/github.com/jaypipes/ghw)](https://goreportcard.com/report/github.com/jaypipes/ghw)
+[![Build Status](https://github.com/alihassan4198-tech/ghw/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/alihassan4198-tech/ghw/actions)
+[![Go Report Card](https://goreportcard.com/badge/github.com/alihassan4198-tech/ghw)](https://goreportcard.com/report/github.com/alihassan4198-tech/ghw)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
 ![ghw mascot](images/ghw-gopher.png)
@@ -182,7 +182,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/jaypipes/ghw/pkg/snapshot"
+	"github.com/alihassan4198-tech/ghw/pkg/snapshot"
 )
 
 // ...
@@ -245,7 +245,7 @@ You can disable warning programmatically using the `WithDisableWarnings` option:
 ```go
 
 import (
-	"github.com/jaypipes/ghw"
+	"github.com/alihassan4198-tech/ghw"
 )
 
 mem, err := ghw.Memory(ghw.WithDisableWarnings())
@@ -291,7 +291,7 @@ fields found in the `ghw.MemoryArea` (replicated for clarity) plus some:
 * `ghw.MemoryInfo.Modules` is an array of pointers to `ghw.MemoryModule`
   structs, one for each physical [DIMM](https://en.wikipedia.org/wiki/DIMM).
   Currently, this information is only included on Windows, with Linux support
-  [planned](https://github.com/jaypipes/ghw/pull/171#issuecomment-597082409).
+  [planned](https://github.com/alihassan4198-tech/ghw/pull/171#issuecomment-597082409).
 
 ```go
 package main
@@ -299,7 +299,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jaypipes/ghw"
+	"github.com/alihassan4198-tech/ghw"
 )
 
 func main() {
@@ -320,8 +320,8 @@ memory (24GB physical, 24GB usable)
 
 #### Physical versus Usable Memory
 
-There has been [some](https://github.com/jaypipes/ghw/pull/171)
-[confusion](https://github.com/jaypipes/ghw/issues/183) regarding the
+There has been [some](https://github.com/alihassan4198-tech/ghw/pull/171)
+[confusion](https://github.com/alihassan4198-tech/ghw/issues/183) regarding the
 difference between the total physical bytes versus total usable bytes of
 memory.
 
@@ -350,7 +350,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jaypipes/ghw"
+	"github.com/alihassan4198-tech/ghw"
 )
 
 func main() {
@@ -423,7 +423,7 @@ import (
 	"math"
 	"strings"
 
-	"github.com/jaypipes/ghw"
+	"github.com/alihassan4198-tech/ghw"
 )
 
 func main() {
@@ -557,7 +557,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jaypipes/ghw"
+	"github.com/alihassan4198-tech/ghw"
 )
 
 func main() {
@@ -598,7 +598,7 @@ block storage (1 disk, 2TB physical storage)
 ### Topology
 
 > **NOTE**: Topology support is currently Linux-only. Windows support is
-> [planned](https://github.com/jaypipes/ghw/issues/166).
+> [planned](https://github.com/alihassan4198-tech/ghw/issues/166).
 
 Information about the host computer's architecture (NUMA vs. SMP), the host's
 node layout and processor caches can be retrieved from the `ghw.Topology()`
@@ -646,7 +646,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jaypipes/ghw"
+	"github.com/alihassan4198-tech/ghw"
 )
 
 func main() {
@@ -731,7 +731,7 @@ package main
 import (
     "fmt"
 
-    "github.com/jaypipes/ghw"
+    "github.com/alihassan4198-tech/ghw"
 )
 
 func main() {
@@ -821,7 +821,7 @@ also query for information about hardware device classes, vendor and product
 information.
 
 **NOTE**: Parsing of the PCI-IDS file database is provided by the separate
-[github.com/jaypipes/pcidb library](http://github.com/jaypipes/pcidb). You can
+[github.com/alihassan4198-tech/pcidb library](http://github.com/alihassan4198-tech/pcidb). You can
 read that library's README for more information about the various structs that
 are exposed on the `ghw.PCIInfo` struct.
 
@@ -834,17 +834,17 @@ struct contains a number of fields that may be queried for PCI information:
   string) of pointers to `pcidb.Class` structs, one for each class of PCI
   device known to `ghw`
   (**DEPRECATED**, will be removed in `ghw` `v1.0`. Use the
-  `github.com/jaypipes/pcidb` library for exploring PCI database information)
+  `github.com/alihassan4198-tech/pcidb` library for exploring PCI database information)
 * `ghw.PCIInfo.Vendors` is a map, keyed by the PCI vendor ID (a hex-encoded
   string) of pointers to `pcidb.Vendor` structs, one for each PCI vendor
   known to `ghw`
   (**DEPRECATED**, will be removed in `ghw` `v1.0`. Use the
-  `github.com/jaypipes/pcidb` library for exploring PCI database information)
+  `github.com/alihassan4198-tech/pcidb` library for exploring PCI database information)
 * `ghw.PCIInfo.Products` is a map, keyed by the PCI product ID (a hex-encoded
   string) of pointers to `pcidb.Product` structs, one for each PCI product
   known to `ghw`
   (**DEPRECATED**, will be removed in `ghw` `v1.0`. Use the
-  `github.com/jaypipes/pcidb` library for exploring PCI database information)
+  `github.com/alihassan4198-tech/pcidb` library for exploring PCI database information)
 
 **NOTE**: PCI products are often referred to by their "device ID". We use
 the term "product ID" in `ghw` because it more accurately reflects what the
@@ -889,7 +889,7 @@ The `ghw.PCIAddress` struct has the following fields:
 
 **NOTE**: Older versions (pre-`v0.9.0`) erroneously referred to the `Device`
 field as the `Slot` field. As noted by [@pearsonk](https://github.com/pearsonk)
-in [#220](https://github.com/jaypipes/ghw/issues/220), this was a misnomer.
+in [#220](https://github.com/alihassan4198-tech/ghw/issues/220), this was a misnomer.
 
 #### Finding a PCI device by PCI address
 
@@ -907,7 +907,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jaypipes/ghw"
+	"github.com/alihassan4198-tech/ghw"
 )
 
 func main() {
@@ -1008,7 +1008,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/jaypipes/ghw"
+	"github.com/alihassan4198-tech/ghw"
 )
 
 func main() {
@@ -1091,7 +1091,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jaypipes/ghw"
+	"github.com/alihassan4198-tech/ghw"
 )
 
 func main() {
@@ -1146,7 +1146,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jaypipes/ghw"
+	"github.com/alihassan4198-tech/ghw"
 )
 
 func main() {
@@ -1194,7 +1194,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jaypipes/ghw"
+	"github.com/alihassan4198-tech/ghw"
 )
 
 func main() {
@@ -1236,7 +1236,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jaypipes/ghw"
+	"github.com/alihassan4198-tech/ghw"
 )
 
 func main() {
@@ -1291,7 +1291,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jaypipes/ghw"
+	"github.com/alihassan4198-tech/ghw"
 )
 
 func main() {
@@ -1340,7 +1340,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jaypipes/ghw"
+	"github.com/alihassan4198-tech/ghw"
 )
 
 func main() {
@@ -1392,8 +1392,8 @@ issue for a feature request or bug report.
 You can run unit tests easily using the `make test` command, like so:
 
 ```
-[jaypipes@uberbox ghw]$ make test
-go test github.com/jaypipes/ghw github.com/jaypipes/ghw/cmd/ghwc
-ok      github.com/jaypipes/ghw 0.084s
-?       github.com/jaypipes/ghw/cmd/ghwc    [no test files]
+[alihassan4198-tech@uberbox ghw]$ make test
+go test github.com/alihassan4198-tech/ghw github.com/alihassan4198-tech/ghw/cmd/ghwc
+ok      github.com/alihassan4198-tech/ghw 0.084s
+?       github.com/alihassan4198-tech/ghw/cmd/ghwc    [no test files]
 ```

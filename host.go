@@ -9,20 +9,20 @@ package ghw
 import (
 	"fmt"
 
-	"github.com/jaypipes/ghw/pkg/context"
+	"github.com/alihassan4198-tech/ghw/pkg/context"
 
-	"github.com/jaypipes/ghw/pkg/baseboard"
-	"github.com/jaypipes/ghw/pkg/bios"
-	"github.com/jaypipes/ghw/pkg/block"
-	"github.com/jaypipes/ghw/pkg/chassis"
-	"github.com/jaypipes/ghw/pkg/cpu"
-	"github.com/jaypipes/ghw/pkg/gpu"
-	"github.com/jaypipes/ghw/pkg/marshal"
-	"github.com/jaypipes/ghw/pkg/memory"
-	"github.com/jaypipes/ghw/pkg/net"
-	"github.com/jaypipes/ghw/pkg/pci"
-	"github.com/jaypipes/ghw/pkg/product"
-	"github.com/jaypipes/ghw/pkg/topology"
+	"github.com/alihassan4198-tech/ghw/pkg/baseboard"
+	"github.com/alihassan4198-tech/ghw/pkg/bios"
+	"github.com/alihassan4198-tech/ghw/pkg/block"
+	"github.com/alihassan4198-tech/ghw/pkg/chassis"
+	"github.com/alihassan4198-tech/ghw/pkg/cpu"
+	"github.com/alihassan4198-tech/ghw/pkg/gpu"
+	"github.com/alihassan4198-tech/ghw/pkg/marshal"
+	"github.com/alihassan4198-tech/ghw/pkg/memory"
+	"github.com/alihassan4198-tech/ghw/pkg/net"
+	"github.com/alihassan4198-tech/ghw/pkg/pci"
+	"github.com/alihassan4198-tech/ghw/pkg/product"
+	"github.com/alihassan4198-tech/ghw/pkg/topology"
 )
 
 // HostInfo is a wrapper struct containing information about the host system's

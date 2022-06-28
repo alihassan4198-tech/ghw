@@ -13,12 +13,12 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/jaypipes/ghw/pkg/context"
-	"github.com/jaypipes/ghw/pkg/marshal"
-	"github.com/jaypipes/ghw/pkg/option"
-	"github.com/jaypipes/ghw/pkg/pci"
+	"github.com/alihassan4198-tech/ghw/pkg/context"
+	"github.com/alihassan4198-tech/ghw/pkg/marshal"
+	"github.com/alihassan4198-tech/ghw/pkg/option"
+	"github.com/alihassan4198-tech/ghw/pkg/pci"
 
-	"github.com/jaypipes/ghw/testdata"
+	"github.com/alihassan4198-tech/ghw/testdata"
 )
 
 type pciTestCase struct {

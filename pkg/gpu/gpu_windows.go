@@ -9,10 +9,10 @@ import (
 	"strings"
 
 	"github.com/StackExchange/wmi"
-	"github.com/jaypipes/pcidb"
+	"github.com/alihassan4198-tech/pcidb"
 
-	"github.com/jaypipes/ghw/pkg/pci"
-	"github.com/jaypipes/ghw/pkg/util"
+	"github.com/alihassan4198-tech/ghw/pkg/pci"
+	"github.com/alihassan4198-tech/ghw/pkg/util"
 )
 
 const wqlVideoController = "SELECT Caption, CreationClassName, Description, DeviceID, Name, PNPDeviceID, SystemCreationClassName, SystemName, VideoArchitecture, VideoMemoryType, VideoModeDescription, VideoProcessor FROM Win32_VideoController"

@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/jaypipes/ghw/pkg/context"
+	"github.com/alihassan4198-tech/ghw/pkg/context"
 )
 
 // PathRoots holds the roots of all the filesystem subtrees

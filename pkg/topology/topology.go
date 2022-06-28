@@ -13,11 +13,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jaypipes/ghw/pkg/context"
-	"github.com/jaypipes/ghw/pkg/cpu"
-	"github.com/jaypipes/ghw/pkg/marshal"
-	"github.com/jaypipes/ghw/pkg/memory"
-	"github.com/jaypipes/ghw/pkg/option"
+	"github.com/alihassan4198-tech/ghw/pkg/context"
+	"github.com/alihassan4198-tech/ghw/pkg/cpu"
+	"github.com/alihassan4198-tech/ghw/pkg/marshal"
+	"github.com/alihassan4198-tech/ghw/pkg/memory"
+	"github.com/alihassan4198-tech/ghw/pkg/option"
 )
 
 // Architecture describes the overall hardware architecture. It can be either
@@ -52,7 +52,7 @@ func (a Architecture) String() string {
 	return architectureString[a]
 }
 
-// NOTE(jaypipes): since serialized output is as "official" as we're going to
+// NOTE(alihassan4198-tech): since serialized output is as "official" as we're going to
 // get, let's lowercase the string output when serializing, in order to
 // "normalize" the expected serialized output
 func (a Architecture) MarshalJSON() ([]byte, error) {

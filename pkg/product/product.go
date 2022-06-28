@@ -7,10 +7,10 @@
 package product
 
 import (
-	"github.com/jaypipes/ghw/pkg/context"
-	"github.com/jaypipes/ghw/pkg/marshal"
-	"github.com/jaypipes/ghw/pkg/option"
-	"github.com/jaypipes/ghw/pkg/util"
+	"github.com/alihassan4198-tech/ghw/pkg/context"
+	"github.com/alihassan4198-tech/ghw/pkg/marshal"
+	"github.com/alihassan4198-tech/ghw/pkg/option"
+	"github.com/alihassan4198-tech/ghw/pkg/util"
 )
 
 // Info defines product information

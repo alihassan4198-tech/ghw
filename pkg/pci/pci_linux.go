@@ -11,14 +11,14 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/jaypipes/pcidb"
+	"github.com/alihassan4198-tech/pcidb"
 
-	"github.com/jaypipes/ghw/pkg/context"
-	"github.com/jaypipes/ghw/pkg/linuxpath"
-	"github.com/jaypipes/ghw/pkg/option"
-	pciaddr "github.com/jaypipes/ghw/pkg/pci/address"
-	"github.com/jaypipes/ghw/pkg/topology"
-	"github.com/jaypipes/ghw/pkg/util"
+	"github.com/alihassan4198-tech/ghw/pkg/context"
+	"github.com/alihassan4198-tech/ghw/pkg/linuxpath"
+	"github.com/alihassan4198-tech/ghw/pkg/option"
+	pciaddr "github.com/alihassan4198-tech/ghw/pkg/pci/address"
+	"github.com/alihassan4198-tech/ghw/pkg/topology"
+	"github.com/alihassan4198-tech/ghw/pkg/util"
 )
 
 const (
@@ -387,7 +387,7 @@ func (info *Info) getDeviceFromModaliasInfo(address string, modaliasInfo *device
 // ListDevices returns a list of pointers to Device structs present on the
 // host system
 // DEPRECATED. Will be removed in v1.0. Please use
-// github.com/jaypipes/pcidb to explore PCIDB information
+// github.com/alihassan4198-tech/pcidb to explore PCIDB information
 func (info *Info) ListDevices() []*Device {
 	paths := linuxpath.New(info.ctx)
 	devs := make([]*Device, 0)

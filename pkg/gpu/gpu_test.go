@@ -11,7 +11,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/jaypipes/ghw/pkg/gpu"
+	"github.com/alihassan4198-tech/ghw/pkg/gpu"
 )
 
 func TestGPU(t *testing.T) {
@@ -37,6 +37,6 @@ func TestGPU(t *testing.T) {
 				t.Fatalf("Expected card with address %s to have non-nil DeviceInfo.", card.Address)
 			}
 		}
-		// TODO(jaypipes): Add Card.Node test when using injected sysfs for testing
+		// TODO(alihassan4198-tech): Add Card.Node test when using injected sysfs for testing
 	}
 }

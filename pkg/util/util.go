@@ -13,7 +13,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jaypipes/ghw/pkg/context"
+	"github.com/alihassan4198-tech/ghw/pkg/context"
 )
 
 const (

@@ -14,7 +14,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/jaypipes/ghw/pkg/option"
+	"github.com/alihassan4198-tech/ghw/pkg/option"
 )
 
 const (

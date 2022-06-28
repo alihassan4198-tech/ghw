@@ -7,19 +7,19 @@
 package ghw
 
 import (
-	"github.com/jaypipes/ghw/pkg/baseboard"
-	"github.com/jaypipes/ghw/pkg/bios"
-	"github.com/jaypipes/ghw/pkg/block"
-	"github.com/jaypipes/ghw/pkg/chassis"
-	"github.com/jaypipes/ghw/pkg/cpu"
-	"github.com/jaypipes/ghw/pkg/gpu"
-	"github.com/jaypipes/ghw/pkg/memory"
-	"github.com/jaypipes/ghw/pkg/net"
-	"github.com/jaypipes/ghw/pkg/option"
-	"github.com/jaypipes/ghw/pkg/pci"
-	pciaddress "github.com/jaypipes/ghw/pkg/pci/address"
-	"github.com/jaypipes/ghw/pkg/product"
-	"github.com/jaypipes/ghw/pkg/topology"
+	"github.com/alihassan4198-tech/ghw/pkg/baseboard"
+	"github.com/alihassan4198-tech/ghw/pkg/bios"
+	"github.com/alihassan4198-tech/ghw/pkg/block"
+	"github.com/alihassan4198-tech/ghw/pkg/chassis"
+	"github.com/alihassan4198-tech/ghw/pkg/cpu"
+	"github.com/alihassan4198-tech/ghw/pkg/gpu"
+	"github.com/alihassan4198-tech/ghw/pkg/memory"
+	"github.com/alihassan4198-tech/ghw/pkg/net"
+	"github.com/alihassan4198-tech/ghw/pkg/option"
+	"github.com/alihassan4198-tech/ghw/pkg/pci"
+	pciaddress "github.com/alihassan4198-tech/ghw/pkg/pci/address"
+	"github.com/alihassan4198-tech/ghw/pkg/product"
+	"github.com/alihassan4198-tech/ghw/pkg/topology"
 )
 
 type WithOption = option.Option

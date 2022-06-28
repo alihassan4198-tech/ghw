@@ -10,14 +10,14 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/jaypipes/pcidb"
+	"github.com/alihassan4198-tech/pcidb"
 
-	"github.com/jaypipes/ghw/pkg/context"
-	"github.com/jaypipes/ghw/pkg/marshal"
-	"github.com/jaypipes/ghw/pkg/option"
-	pciaddr "github.com/jaypipes/ghw/pkg/pci/address"
-	"github.com/jaypipes/ghw/pkg/topology"
-	"github.com/jaypipes/ghw/pkg/util"
+	"github.com/alihassan4198-tech/ghw/pkg/context"
+	"github.com/alihassan4198-tech/ghw/pkg/marshal"
+	"github.com/alihassan4198-tech/ghw/pkg/option"
+	pciaddr "github.com/alihassan4198-tech/ghw/pkg/pci/address"
+	"github.com/alihassan4198-tech/ghw/pkg/topology"
+	"github.com/alihassan4198-tech/ghw/pkg/util"
 )
 
 // backward compatibility, to be removed in 1.0.0
@@ -62,7 +62,7 @@ type devMarshallable struct {
 	Interface devIdent `json:"programming_interface"`
 }
 
-// NOTE(jaypipes) Device has a custom JSON marshaller because we don't want
+// NOTE(alihassan4198-tech) Device has a custom JSON marshaller because we don't want
 // to serialize the entire PCIDB information for the Vendor (which includes all
 // of the vendor's products, etc). Instead, we simply serialize the ID and
 // human-readable name of the vendor, product, class, etc.
@@ -129,15 +129,15 @@ type Info struct {
 	Devices []*Device
 	// hash of class ID -> class information
 	// DEPRECATED. Will be removed in v1.0. Please use
-	// github.com/jaypipes/pcidb to explore PCIDB information
+	// github.com/alihassan4198-tech/pcidb to explore PCIDB information
 	Classes map[string]*pcidb.Class `json:"-"`
 	// hash of vendor ID -> vendor information
 	// DEPRECATED. Will be removed in v1.0. Please use
-	// github.com/jaypipes/pcidb to explore PCIDB information
+	// github.com/alihassan4198-tech/pcidb to explore PCIDB information
 	Vendors map[string]*pcidb.Vendor `json:"-"`
 	// hash of vendor ID + product/device ID -> product information
 	// DEPRECATED. Will be removed in v1.0. Please use
-	// github.com/jaypipes/pcidb to explore PCIDB information
+	// github.com/alihassan4198-tech/pcidb to explore PCIDB information
 	Products map[string]*pcidb.Product `json:"-"`
 }
 
