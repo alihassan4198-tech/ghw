@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/alihassan4198-tech/pcidb"
+	"github.com/jaypipes/pcidb"
 
 	"github.com/alihassan4198-tech/ghw/pkg/context"
 	"github.com/alihassan4198-tech/ghw/pkg/linuxpath"

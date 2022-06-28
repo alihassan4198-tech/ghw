@@ -10,7 +10,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/alihassan4198-tech/pcidb"
+	"github.com/jaypipes/pcidb"
 
 	"github.com/alihassan4198-tech/ghw/pkg/context"
 	"github.com/alihassan4198-tech/ghw/pkg/marshal"
