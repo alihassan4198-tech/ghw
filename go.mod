@@ -1,4 +1,4 @@
-module github.com/jaypipes/ghw
+module github.com/alihassan4198-tech/ghw
 
 go 1.15
 
