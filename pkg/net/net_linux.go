@@ -85,15 +85,15 @@ func netDeviceMacAddress(paths *linuxpath.Paths, dev string) string {
 	// that have addr_assign_type != 0, return None since the MAC address is
 	// random.
 	aatPath := filepath.Join(paths.SysClassNet, dev, "addr_assign_type")
-	contents, err := ioutil.ReadFile(aatPath)
+	_, err := ioutil.ReadFile(aatPath)
 	if err != nil {
 		return ""
 	}
-	if strings.TrimSpace(string(contents)) != "0" {
-		return ""
-	}
+	// if strings.TrimSpace(string(contents)) != "0" {
+	// 	return ""
+	// }
 	addrPath := filepath.Join(paths.SysClassNet, dev, "address")
-	contents, err = ioutil.ReadFile(addrPath)
+	contents, err := ioutil.ReadFile(addrPath)
 	if err != nil {
 		return ""
 	}
