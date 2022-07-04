@@ -10,7 +10,9 @@ import "github.com/alihassan4198-tech/ghw/pkg/linuxdmi"
 func (i *Info) load() error {
 	i.Vendor = linuxdmi.Item(i.ctx, "bios_vendor")
 	i.Version = linuxdmi.Item(i.ctx, "bios_version")
-	i.Date = linuxdmi.Item(i.ctx, "bios_date")
+	i.Name = linuxdmi.Item(i.ctx, "board_name")
+	i.Serialnumber = linuxdmi.Item(i.ctx, "board_serial")
+	i.Installdate = linuxdmi.Item(i.ctx, "bios_date")
 
 	return nil
 }
