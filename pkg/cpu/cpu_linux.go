@@ -110,6 +110,7 @@ func processorsGet(ctx *context.Context) []*Processor {
 
 		cores := make([]*ProcessorCore, 0)
 		for _, lpidx := range lps {
+
 			lpid, err := strconv.Atoi(procAttrs[lpidx]["processor"])
 			if err != nil {
 				continue
@@ -142,6 +143,7 @@ func processorsGet(ctx *context.Context) []*Processor {
 			}
 		}
 		p.Cores = cores
+
 		procs = append(procs, p)
 	}
 	return procs

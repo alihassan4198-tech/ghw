@@ -62,6 +62,11 @@ type Processor struct {
 	// Cores is a slice of ProcessorCore` struct pointers that are packed onto
 	// this physical processor
 	Cores []*ProcessorCore `json:"cores"`
+
+	CPUFamily string `json:"cpu_family"`
+	FPU       string `json:"fpu"`
+	CPUMhz    string `json:"cpu_mhz"`
+	Name      string `json:"name"`
 }
 
 // HasCapability returns true if the Processor has the supplied cpuid
