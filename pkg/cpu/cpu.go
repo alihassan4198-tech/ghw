@@ -114,6 +114,7 @@ type Info struct {
 	// TotalThreads is the total number of hardware threads the host system
 	// contains
 	TotalThreads uint32 `json:"total_threads"`
+	CPUMhz       string `json:"cpus_mhz"`
 	// Processors is a slice of Processor struct pointers, one for each
 	// physical processor package contained in the host
 	Processors []*Processor `json:"processors"`

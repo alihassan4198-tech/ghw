@@ -7,9 +7,6 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/alihassan4198-tech/ghw"
 	"github.com/alihassan4198-tech/ghw/cmd/ghwc/commands"
 )
 
@@ -24,10 +21,4 @@ var (
 
 func main() {
 	commands.Execute(version, buildHash, buildDate)
-	cpu, err := ghw.CPU()
-	if err != nil {
-		fmt.Printf("Error getting CPU info: %v", err)
-	}
-
-	fmt.Printf("%v\n", cpu)
 }

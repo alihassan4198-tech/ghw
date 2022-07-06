@@ -142,10 +142,19 @@ func processorsGet(ctx *context.Context) []*Processor {
 				cores = append(cores, core)
 			}
 		}
+
 		p.Cores = cores
 
 		procs = append(procs, p)
 	}
+
+	for i, proc := range procAttrs {
+		procs[i].CPUMhz = proc["cpu MHz"]
+		procs[i].CPUFamily = proc["cpu family"]
+		procs[i].FPU = proc["fpu"]
+		procs[i].Name = proc["vendor_id"]
+	}
+
 	return procs
 }
 
